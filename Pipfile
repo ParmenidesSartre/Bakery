@@ -9,7 +9,7 @@ pillow = "*"
 django-resized = "*"
 braintree = "==3.59.0"
 whitenoise = "*"
-gunicorn = "*"
+gunicorn = "==19.7.1"
 
 [dev-packages]
 
