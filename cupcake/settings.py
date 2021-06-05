@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-zjbeb!-o)zuov1p+&-1$l=#-&!&9e^)at5z02j%7s895*^bkdz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://demo-taipingbakery.herokuapp.com/']
 
 
 # Application definition
@@ -51,8 +51,8 @@ INSTALLED_APPS = [
 CART_SESSION_ID = 'cart'
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
