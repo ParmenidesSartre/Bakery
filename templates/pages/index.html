@@ -1,0 +1,935 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<html lang="en">
+  <!-- Mirrored from nouthemes.net/html/bakery/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2020 10:03:34 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="favicon.png" rel="icon" />
+    <meta name="author" content="#{author}" />
+    <meta name="keywords" content="#{keyword}" />
+    <meta name="description" content="#{description}" />
+    <title>Taiping Bakery | Your #1 Choice</title>
+    <!-- Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700%7CPacifico%7CVarela+Round%7CPoppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'plugins/ps-icon/ps-icon.css' %}" />
+    <!-- CSS Library-->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/owl-carousel/assets/owl.carousel.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/Magnific-Popup/dist/magnific-popup.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-ui/jquery-ui.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/slick/slick/slick.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/lightGallery-master/dist/css/lightgallery.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/settings.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/layers.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/navigation.css' %}"
+    />
+    <!-- Custom-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9
+      ]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+  <!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+  <!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
+  <body class="page-init">
+    <div class="header--sidebar"></div>
+    <header class="header" data-responsive="1199">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+              <p>
+                144-146, Jalan Taming Sari, 34000 Taiping, Perak - Hotline:
+                05-8073354
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="container">
+          <div class="menu-toggle"><span></span></div>
+          <div class="navigation__left">
+            <ul class="menu menu--left">
+              <li class="current"><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'vault' %}">Cake's Vault</a></li>
+            </ul>
+          </div>
+          <a class="ps-logo" href="{% url 'index' %}"
+            ><img src="{% static 'images/logo-1.png' %}" alt=""
+          /></a>
+          <div class="navigation__right">
+            <ul class="menu menu--right">
+              <li class="menu-item-has-children">
+                <a href="blog-listing.html">Blogs</a>
+                <ul class="sub-menu">
+                  <li class="menu-item-has-children">
+                    <a href="blog-detail.html">Blog Detail</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Sample Menu #1</a></li>
+                      <li><a href="#">Sample Menu #2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Contact</a>
+                <ul class="sub-menu">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="back2top"><i class="fa fa-angle-up"></i></div>
+    <div class="loader"></div>
+    <div class="page-wrap">
+      <div class="ps-banner--home-1">
+        <div
+          class="rev_slider_wrapper fullscreen-container"
+          id="revolution-slider-1"
+          data-alias="concept121"
+          data-source="gallery"
+          style="background-color: #000000; padding: 0px"
+        >
+          <div
+            class="rev_slider fullscreenbanner"
+            id="rev_slider_1059_1"
+            style="display: none"
+            data-version="5.4.1"
+          >
+            <ul class="ps-banner">
+              <li
+                data-index="rs-2972"
+                data-transition="slidingoverlayhorizontal"
+                data-slotamount="default"
+                data-hideafterloop="0"
+                data-hideslideonmobile="off"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="default"
+                data-thumb="../../assets/images/concept4-100x100.jpg"
+                data-rotate="0"
+                data-saveperformance="off"
+                data-title="Web Show"
+                data-param1=""
+                data-param2=""
+                data-param3=""
+                data-param4=""
+                data-param5=""
+                data-param6=""
+                data-param7=""
+                data-param8=""
+                data-param9=""
+                data-param10=""
+                data-description=""
+              >
+                <img
+                  class="rev-slidebg"
+                  src="{% static 'images/banner/img-slider-1.jpg' %}"
+                  alt=""
+                  data-bgposition="center center"
+                  data-bgfit="cover"
+                  data-bgrepeat="no-repeat"
+                  data-bgparallax="5"
+                  data-no-retina
+                />
+                <div
+                  class="tp-caption ps-banner__caption"
+                  id="layer01"
+                  data-x="['center','center','center','center']"
+                  data-hoffset="['0','0','0','0']"
+                  data-y="['middle','middle','middle','middle']"
+                  data-voffset="['-100','-80','-120','-120']"
+                  data-width="['none','none','none','400']"
+                  data-whitespace="['nowrap','nowrap','nowrap','normal']"
+                  data-type="text"
+                  data-responsive_offset="on"
+                  data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                  style="z-index: 7; white-space: nowrap; text-transform: left"
+                >
+                  We Implement Sweet Dream
+                </div>
+                <div
+                  class="tp-caption ps-banner__description"
+                  id="layer02"
+                  data-x="['center','center','center','center']"
+                  data-hoffset="['0','0','0','0']"
+                  data-y="['middle','middle','middle','middle']"
+                  data-voffset="['0','0','0','0']"
+                  data-type="text"
+                  data-responsive_offset="on"
+                  data-textAlign="['center','center','center','center']"
+                  data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                >
+                  Carrot cake macaroon topping jelly-o dessert cake. Tiramisu
+                  gummies wafer brownie tiramisu cake. <br />
+                  Icing powder candy canes cotton candy pie liquorice.
+                </div>
+                <a
+                  class="tp-caption ps-btn ps-btn--lg"
+                  href="{% url 'vault' %}"
+                  id="layer03"
+                  data-x="['center','center','center','center']"
+                  data-hoffset="['0','0','0','0']"
+                  data-y="['middle','middle','middle','middle']"
+                  data-voffset="['80','70','70','70']"
+                  data-type="text"
+                  data-responsive_offset="on"
+                  data-textAlign="['center','center','center','center']"
+                  data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                  >TRY OUR CUPCAKES <i class="fa fa-angle-right"></i
+                ></a>
+              </li>
+              <li
+                data-index="rs-2973"
+                data-transition="slidingoverlayhorizontal"
+                data-slotamount="default"
+                data-hideafterloop="0"
+                data-hideslideonmobile="off"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="default"
+                data-thumb="../../assets/images/concept4-100x100.jpg"
+                data-rotate="0"
+                data-saveperformance="off"
+                data-title="Web Show"
+                data-param1=""
+                data-param2=""
+                data-param3=""
+                data-param4=""
+                data-param5=""
+                data-param6=""
+                data-param7=""
+                data-param8=""
+                data-param9=""
+                data-param10=""
+                data-description=""
+              >
+                <img
+                  class="rev-slidebg"
+                  src="{% static 'images/banner/img-slider-2.jpg' %}"
+                  alt=""
+                  data-bgposition="center center"
+                  data-bgfit="cover"
+                  data-bgrepeat="no-repeat"
+                  data-bgparallax="5"
+                  data-no-retina
+                />
+                <div
+                  class="tp-caption ps-banner__caption"
+                  id="layer04"
+                  data-x="['center','center','center','center']"
+                  data-hoffset="['0','0','0','0']"
+                  data-y="['middle','middle','middle','middle']"
+                  data-voffset="['-100','-80','-120','-120']"
+                  data-width="['none','none','none','400']"
+                  data-whitespace="['nowrap','nowrap','nowrap','normal']"
+                  data-type="text"
+                  data-responsive_offset="on"
+                  data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1700,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                  style="z-index: 7; white-space: nowrap; text-transform: left"
+                >
+                  A little bliss in every bite
+                </div>
+                <div
+                  class="tp-caption ps-banner__description"
+                  id="layer05"
+                  data-x="['center','center','center','center']"
+                  data-hoffset="['0','0','0','0']"
+                  data-y="['middle','middle','middle','middle']"
+                  data-voffset="['0','0','0','0']"
+                  data-type="text"
+                  data-responsive_offset="on"
+                  data-textAlign="['center','center','center','center']"
+                  data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                >
+                  Macaroon lollipop gummi bears liquorice sweet. Icing dessert
+                  sweet apple pie chocolate cake. Jujubes halvah cupcake
+                  cheesecake.
+                </div>
+                <a
+                  class="tp-caption ps-btn ps-btn--lg"
+                  href="#"
+                  id="layer06"
+                  data-x="['center','center','center','center']"
+                  data-hoffset="['0','0','0','0']"
+                  data-y="['middle','middle','middle','middle']"
+                  data-voffset="['80','70','70','70']"
+                  data-type="text"
+                  data-responsive_offset="on"
+                  data-textAlign="['center','center','center','center']"
+                  data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:left(R);","ease":"Power3.easeIn"}]'
+                  >ORDER NOW <i class="fa fa-angle-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="ps-section ps-section--best-seller pt-40 pb-100">
+        <div class="container">
+          <div class="ps-section__header text-center mb-50">
+            <h4 class="ps-section__top">Sweet Cupcakes</h4>
+            <h3 class="ps-section__title ps-section__title--full">
+              BEST SELLER
+            </h3>
+          </div>
+          <div class="ps-section__content">
+            <div
+              class="owl-slider owl-slider--best-seller"
+              data-owl-auto="true"
+              data-owl-loop="true"
+              data-owl-speed="5000"
+              data-owl-gap="30"
+              data-owl-nav="true"
+              data-owl-dots="false"
+              data-owl-animate-in=""
+              data-owl-animate-out=""
+              data-owl-item="4"
+              data-owl-item-xs="1"
+              data-owl-item-sm="2"
+              data-owl-item-md="3"
+              data-owl-item-lg="4"
+              data-owl-nav-left='&lt;i class="ps-icon--back"&gt;&lt;/i&gt;'
+              data-owl-nav-right='&lt;i class="ps-icon--next"&gt;&lt;/i&gt;'
+            >
+              {% if best_sellers %} {% for best_seller in best_sellers %}
+              <div class="ps-product">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__overlay" href="{% url 'cupcake' best_seller.id %}"></a
+                  ><img src="{{best_seller.photo.url}}" alt="" />
+                </div>
+                <div class="ps-product__content">
+                  <a class="ps-product__title" href="{% url 'cupcake' best_seller.id %}"
+                    >{{ best_seller.name }}</a
+                  >
+                  <p class="ps-product__price">RM {{ best_seller.price }}</p>
+                </div>
+              </div>
+              {% endfor %} {% else %}
+              <div class="col-md-12">
+                <p>No Best Sellers</p>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="ps-section ps-section--home-testimonial pb-30 bg--parallax"
+        data-background="{% static 'images/parallax/img-bg-1.jpg' %}"
+      >
+        <div class="container">
+          <div
+            class="owl-slider"
+            data-owl-auto="true"
+            data-owl-loop="true"
+            data-owl-speed="10000"
+            data-owl-gap="0"
+            data-owl-nav="false"
+            data-owl-dots="true"
+            data-owl-animate-in=""
+            data-owl-animate-out=""
+            data-owl-item="1"
+            data-owl-item-xs="1"
+            data-owl-item-sm="1"
+            data-owl-item-md="1"
+            data-owl-item-lg="1"
+            data-owl-nav-left='&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;'
+            data-owl-nav-right='&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;'
+          >
+            <div class="ps-testimonial text-center pt-80 pb-100">
+              <div class="ps-testimonial__header">
+                <div class="ps-testimonial__thumbnail">
+                  <img src="images/testimonial/1.jpg" alt="" />
+                </div>
+                <select class="ps-rating">
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                  <option value="1">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>Logan May - CEO & Founder Invision</p>
+              </div>
+              <div class="ps-testimonial__content">
+                <p>
+                  Dessert pudding dessert jelly beans cupcake sweet caramels
+                  gingerbread. Fruitcake biscuit cheesecake. Cookie topping
+                  sweet muffin pudding tart bear claw sugar plum croissant.
+                </p>
+              </div>
+            </div>
+            <div class="ps-testimonial text-center pt-80 pb-100">
+              <div class="ps-testimonial__header">
+                <div class="ps-testimonial__thumbnail">
+                  <img src="images/testimonial/2.jpg" alt="" />
+                </div>
+                <select class="ps-rating">
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                  <option value="1">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>Logan May - CEO & Founder Invision</p>
+              </div>
+              <div class="ps-testimonial__content">
+                <p>
+                  Dessert pudding dessert jelly beans cupcake sweet caramels
+                  gingerbread. Fruitcake biscuit cheesecake. Cookie topping
+                  sweet muffin pudding tart bear claw sugar plum croissant.
+                </p>
+              </div>
+            </div>
+            <div class="ps-testimonial text-center pt-80 pb-100">
+              <div class="ps-testimonial__header">
+                <div class="ps-testimonial__thumbnail">
+                  <img src="images/testimonial/3.jpg" alt="" />
+                </div>
+                <select class="ps-rating">
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                  <option value="1">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>Logan May - CEO & Founder Invision</p>
+              </div>
+              <div class="ps-testimonial__content">
+                <p>
+                  Dessert pudding dessert jelly beans cupcake sweet caramels
+                  gingerbread. Fruitcake biscuit cheesecake. Cookie topping
+                  sweet muffin pudding tart bear claw sugar plum croissant.
+                </p>
+              </div>
+            </div>
+            <div class="ps-testimonial text-center pt-80 pb-100">
+              <div class="ps-testimonial__header">
+                <div class="ps-testimonial__thumbnail">
+                  <img src="images/testimonial/4.jpg" alt="" />
+                </div>
+                <select class="ps-rating">
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                  <option value="1">4</option>
+                  <option value="5">5</option>
+                </select>
+                <p>Logan May - CEO & Founder Invision</p>
+              </div>
+              <div class="ps-testimonial__content">
+                <p>
+                  Dessert pudding dessert jelly beans cupcake sweet caramels
+                  gingerbread. Fruitcake biscuit cheesecake. Cookie topping
+                  sweet muffin pudding tart bear claw sugar plum croissant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="ps-section ps-section--offer pt-80 pb-40"></section>
+      <section class="ps-section ps-section--list-product pt-40 pb-80">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="ps-section__header">
+                <h3 class="ps-section__title ps-section__title--left">
+                  HOT CAKE
+                </h3>
+              </div>
+              <div class="ps-section__content">
+                {% for hot_cake in hot_cakes %}
+                <div class="ps-product--list">
+                  <div class="ps-product__thumbnail">
+                    <a
+                      class="ps-product__overlay"
+                      href="{% url 'cupcake' hot_cake.id %}"
+                    ></a
+                    ><img src="{{ hot_cake.photo.url }}" alt="" />
+                  </div>
+                  <div class="ps-product__content">
+                    <h4 class="ps-product__title">
+                      <a href="{% url 'cupcake' hot_cake.id %}">{{ hot_cake.name }}</a>
+                    </h4>
+                    <p>
+                      {{ hot_cake.description }}
+                    </p>
+                    {% if hot_cake.after_discount %}
+                    <p class="ps-product__price">
+                      <del>RM {{hot_cake.price}}</del>RM
+                      {{hot_cake.after_discount}}
+                    </p>
+                    <a class="ps-btn ps-btn--xs" href="{% url 'cupcake' hot_cake.id %}"
+                      >Order now<i class="fa fa-angle-right"></i
+                    ></a>
+                    {% else %}
+                    <p class="ps-product__price">RM {{hot_cake.price}}</p>
+                    <a class="ps-btn ps-btn--xs" href="cart.html"
+                      >Order now<i class="fa fa-angle-right"></i
+                    ></a>
+                    {% endif %}
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="ps-section__header">
+                <h3 class="ps-section__title ps-section__title--left">
+                  New CAKE
+                </h3>
+              </div>
+              <div class="ps-section__content">
+                {% for new_cake in new_cakes %}
+                <div class="ps-product--list">
+                  <div class="ps-product__thumbnail">
+                    <a
+                      class="ps-product__overlay"
+                      href="{% url 'cupcake' new_cake.id %}"
+                    ></a
+                    ><img src="{{ new_cake.photo.url }}" alt="" />
+                  </div>
+                  <div class="ps-product__content">
+                    <h4 class="ps-product__title">
+                      <a href="{% url 'cupcake' new_cake.id %}">{{new_cake.name}}</a>
+                    </h4>
+                    <p>
+                      {{new_cake.description}}
+                    </p>
+                    {% if new_cake.after_discount %}
+                    <p class="ps-product__price">
+                      <del>RM {{new_cake.price}}</del>RM
+                      {{new_cake.after_discount}}
+                    </p>
+                    <a class="ps-btn ps-btn--xs" href="{% url 'cupcake' new_cake.id %}"
+                      >Order now<i class="fa fa-angle-right"></i
+                    ></a>
+                    {% else %}
+                    <p class="ps-product__price">RM {{new_cake.price}}</p>
+                    <a class="ps-btn ps-btn--xs" href="cart.html"
+                      >Order now<i class="fa fa-angle-right"></i
+                    ></a>
+                    {% endif %}
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="ps-section ps-section--team ps-section--pattern pt-80 pb-80"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="ps-section__header">
+                <h3 class="ps-section__title ps-section__title--left">
+                  OUR BAKER
+                </h3>
+                <p>
+                  We all have those moments in our lives when we feel as if
+                  everything needs to be exactly rigt.
+                </p>
+                <p>
+                  Dessert tiramisu tart donut macaroon. Gummi bears lollipop
+                  marzipan. Caramels gummi bears icing jelly beans cheesecake
+                  brownie topping candy sugaplum.
+                </p>
+                <ul class="ps-list ps-list--dot">
+                  <li>Caramels gummi bears</li>
+                  <li>Caramels gummi bears</li>
+                  <li>Caramels gummi bears</li>
+                </ul>
+                <a class="ps-btn ps-section__morelink" href="#"
+                  >Read more<i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <div class="ps-section__content">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <article class="ps-people">
+                      <div class="ps-people__thumbnail">
+                        <a class="ps-people__overlay" href="#"></a
+                        ><img src="{% static 'images/team/team-1.jpg' %}" alt="" />
+                      </div>
+                      <div class="ps-people__content">
+                        <h4>Christian Gregory</h4>
+                        <span class="ps-people__position">CEO - Founder</span>
+                        <p>
+                          Jelly topping halvah caramels sweet cake gummi bears
+                          toffee.
+                        </p>
+                        <ul class="ps-people__social">
+                          <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-google"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <article class="ps-people">
+                      <div class="ps-people__thumbnail">
+                        <a class="ps-people__overlay" href="#"></a
+                        ><img src="{% static 'images/team/team-2.jpg' %}" alt="" />
+                      </div>
+                      <div class="ps-people__content">
+                        <h4>Christian Gregory</h4>
+                        <span class="ps-people__position">CEO - Founder</span>
+                        <p>
+                          Jelly topping halvah caramels sweet cake gummi bears
+                          toffee.
+                        </p>
+                        <ul class="ps-people__social">
+                          <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-google"></i></a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ps-section ps-section--partner">
+        <div class="container">
+          <div
+            class="owl-slider"
+            data-owl-auto="true"
+            data-owl-loop="true"
+            data-owl-speed="10000"
+            data-owl-gap="40"
+            data-owl-nav="false"
+            data-owl-dots="false"
+            data-owl-animate-in=""
+            data-owl-animate-out=""
+            data-owl-item="6"
+            data-owl-item-xs="3"
+            data-owl-item-sm="4"
+            data-owl-item-md="5"
+            data-owl-item-lg="6"
+            data-owl-nav-left='&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;'
+            data-owl-nav-right='&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;'
+          >
+            <a href="#"><img src="images/partner/1.png" alt="" /></a
+            ><a href="#"><img src="images/partner/2.png" alt="" /></a
+            ><a href="#"><img src="images/partner/3.png" alt="" /></a
+            ><a href="#"><img src="images/partner/4.png" alt="" /></a
+            ><a href="#"><img src="images/partner/5.png" alt="" /></a
+            ><a href="#"><img src="images/partner/6.png" alt="" /></a
+            ><a href="#"><img src="images/partner/7.png" alt="" /></a
+            ><a href="#"><img src="images/partner/8.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <section class="ps-section ps-section--subscribe pt-80 pb-80">
+        <div class="container">
+          <div class="ps-subscribe">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h4>ABOUT US</h4>
+                <p>
+                  Te pri oblique ullamcorper, magna persequeris has eu. Mei
+                  prompta dolores examad debet suavitate. Pri te vocibus
+                  electram. Eu eleifend rationibus vis, at.
+                </p>
+                <p class="text-uppercase ps-subscribe__highlight">
+                  240 CENTRAL PARK, LONDON, OR 10019
+                </p>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <a class="ps-subscribe__logo" href="index.html"
+                  ><img src="images/logo-1.png" alt=""
+                /></a>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h4>SUBSCRIBE EMAIL</h4>
+                <p>
+                  Give us your email, and we shall send regular updates for new
+                  stuff and events.
+                </p>
+                <form
+                  class="ps-subscribe__form"
+                  method="post"
+                  action="http://nouthemes.net/html/bakery/_action"
+                >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Type your email..."
+                  />
+                  <button class="ps-btn ps-btn--sm">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="ps-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--payment">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">PAYMENTS ACCEPTED</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/1.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/2.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/3.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/4.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/5.png' %}" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--worktime">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">WORK TIME</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <p><strong>Monday - Friday</strong> 8:00 am - 8:30 pm</p>
+                  <p><strong>Satuday - Sunday</strong>10:00 am - 16:30 pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--connect">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">CONNECT US</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul class="ps-widget__social">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                  <a href="#"
+                    ><img src="{% static 'images/app.jpg' %}" alt=""
+                  /></a>
+                  <p>@2021 Design by<a href="#"> Noesis Studio</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS Library-->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery/dist/jquery.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap/dist/js/bootstrap.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/owl-carousel/owl.carousel.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/overflow-text.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/masonry.pkgd.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/imagesloaded.pkgd.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-bar-rating/dist/jquery.barrating.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-nice-select/js/jquery.nice-select.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-ui/jquery-ui.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/moment.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/slick/slick/slick.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/gmap3.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/lightGallery-master/dist/js/lightgallery-all.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB458d7lg9ttCaCfXKPEf-LBAebMMw5RaU&amp;region=GB"
+    ></script>
+    <!-- Revolution - slider-->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"
+    ></script>
+    <!-- Custom scripts-->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+
+  <!-- Mirrored from nouthemes.net/html/bakery/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2020 10:05:43 GMT -->
+</html>

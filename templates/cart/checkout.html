@@ -1,0 +1,465 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<html lang="en">
+  <!-- Mirrored from nouthemes.net/html/bakery/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2020 10:03:34 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="favicon.png" rel="icon" />
+    <meta name="author" content="#{author}" />
+    <meta name="keywords" content="#{keyword}" />
+    <meta name="description" content="#{description}" />
+    <title>Taiping Bakery | Your #1 Choice</title>
+    <!-- Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700%7CPacifico%7CVarela+Round%7CPoppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'plugins/ps-icon/ps-icon.css' %}" />
+    <!-- CSS Library-->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/owl-carousel/assets/owl.carousel.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/Magnific-Popup/dist/magnific-popup.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-ui/jquery-ui.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/slick/slick/slick.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/lightGallery-master/dist/css/lightgallery.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/settings.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/layers.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/navigation.css' %}"
+    />
+    <!-- Custom-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9
+      ]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+  <!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+  <!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
+  <body class="page-init">
+    <div class="header--sidebar"></div>
+    <header class="header" data-responsive="1199">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+              <p>
+                144-146, Jalan Taming Sari, 34000 Taiping, Perak - Hotline:
+                05-8073354
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="container">
+          <div class="menu-toggle"><span></span></div>
+          <div class="navigation__left">
+            <ul class="menu menu--left">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'vault' %}">Cake's Vault</a></li>
+            </ul>
+          </div>
+          <a class="ps-logo" href="{% url 'index' %}"
+            ><img src="{% static 'images/logo-1.png' %}" alt=""
+          /></a>
+          <div class="navigation__right">
+            <ul class="menu menu--right">
+              <li class="menu-item-has-children">
+                <a href="blog-listing.html">Blogs</a>
+                <ul class="sub-menu">
+                  <li class="menu-item-has-children">
+                    <a href="blog-detail.html">Blog Detail</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Sample Menu #1</a></li>
+                      <li><a href="#">Sample Menu #2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Contact</a>
+                <ul class="sub-menu">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="back2top"><i class="fa fa-angle-up"></i></div>
+    <div class="loader"></div>
+    <div class="page-wrap">
+      <!--section-->
+      <div class="ps-section--hero">
+        <img src="{% static 'images/hero/01.jpg' %}" alt="" />
+        <div class="ps-section__content text-center">
+          <h3 class="ps-section__title">TAIPING BAKERY</h3>
+          <div class="ps-breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'cart:cart_detail' %}">Cart</a></li>
+              <li class="active">Checkout</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="ps-section--checkout pt-80 pb-80">
+        <div class="container">
+          <form class="ps-checkout" method="post">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="ps-checkout__billing">
+                  <h3>Billing Detail</h3>
+                  <div class="form-group">
+                    <label>First Name<span>*</span> </label>
+                    {{ form.first_name }}
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name<span>*</span> </label>
+                    {{ form.last_name }}
+                  </div>
+                  <div class="form-group">
+                    <label>Email Address<span>*</span> </label>
+                    {{ form.email }}
+                  </div>
+                  <div class="form-group">
+                    <label>Phone<span>*</span> </label>
+                    {{ form.phone}}
+                  </div>
+                  <div class="form-group">
+                    <label>Address<span>*</span> </label>
+                    {{ form.address }}
+                  </div>
+                  <h3>Addition information</h3>
+                  <div class="form-group">
+                    <label>Order Notes</label>
+                    {{ form.order_notes }}
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="ps-checkout__order">
+                  <h3>Your Order</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase">Product</th>
+                        <th class="text-uppercase">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for item in cart %}
+                      <tr>
+                        <td>{{ item.quantity }} x {{ item.product.name }}</td>
+                        <td>RM {{ item.total_price }}</td>
+                      </tr>
+                      {% endfor %}
+                      <tr>
+                        <td>Order Total</td>
+                        <td>RM {{ cart.get_total_price }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="form-group">
+                    <h5>We only support Paypal at the moment.</h5>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Place Order"
+                    class="ps-btn ps-btn--sm"
+                  />
+                  {% csrf_token %}
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <section class="ps-section ps-section--subscribe pt-80 pb-80">
+        <div class="container">
+          <div class="ps-subscribe">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h4>ABOUT US</h4>
+                <p>
+                  Te pri oblique ullamcorper, magna persequeris has eu. Mei
+                  prompta dolores examad debet suavitate. Pri te vocibus
+                  electram. Eu eleifend rationibus vis, at.
+                </p>
+                <p class="text-uppercase ps-subscribe__highlight">
+                  240 CENTRAL PARK, LONDON, OR 10019
+                </p>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <a class="ps-subscribe__logo" href="index.html"
+                  ><img src="images/logo-1.png" alt=""
+                /></a>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h4>SUBSCRIBE EMAIL</h4>
+                <p>
+                  Give us your email, and we shall send regular updates for new
+                  stuff and events.
+                </p>
+                <form
+                  class="ps-subscribe__form"
+                  method="post"
+                  action="http://nouthemes.net/html/bakery/_action"
+                >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Type your email..."
+                  />
+                  <button class="ps-btn ps-btn--sm">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="ps-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--payment">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">PAYMENTS ACCEPTED</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul>
+                    <li>
+                      <a href="#"><img src="images/payment/1.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/payment/2.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/payment/3.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/payment/4.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="images/payment/5.png" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--worktime">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">WORK TIME</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <p><strong>Monday - Friday</strong> 8:00 am - 8:30 pm</p>
+                  <p><strong>Satuday - Sunday</strong>10:00 am - 16:30 pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--order">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">ORDERS AND RETURNS</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul class="ps-list--line">
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Policy Return Policy</a></li>
+                    <li><a href="#">Payments</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--connect">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">CONNECT US</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul class="ps-widget__social">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                  <a href="#"><img src="images/app.jpg" alt="" /></a>
+                  <p>@2017 Design by<a href="#"> Alena Studio</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS Library-->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery/dist/jquery.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap/dist/js/bootstrap.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/owl-carousel/owl.carousel.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/overflow-text.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/masonry.pkgd.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/imagesloaded.pkgd.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-bar-rating/dist/jquery.barrating.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-nice-select/js/jquery.nice-select.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-ui/jquery-ui.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/moment.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/slick/slick/slick.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/gmap3.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/lightGallery-master/dist/js/lightgallery-all.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB458d7lg9ttCaCfXKPEf-LBAebMMw5RaU&amp;region=GB"
+    ></script>
+    <!-- Revolution - slider-->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"
+    ></script>
+    <!-- Custom scripts-->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+
+  <!-- Mirrored from nouthemes.net/html/bakery/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2020 10:08:15 GMT -->
+</html>

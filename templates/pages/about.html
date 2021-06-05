@@ -1,0 +1,613 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<html lang="en">
+  <!-- Mirrored from nouthemes.net/html/bakery/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2020 10:08:03 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="favicon.png" rel="icon" />
+    <meta name="author" content="#{author}" />
+    <meta name="keywords" content="#{keyword}" />
+    <meta name="description" content="#{description}" />
+    <title>Taiping Bakery | About</title>
+    <!-- Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700%7CPacifico%7CVarela+Round%7CPoppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}"
+    />
+    <link rel="stylesheet" href="{% static 'plugins/ps-icon/ps-icon.css' %}" />
+    <!-- CSS Library-->
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap/dist/css/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/owl-carousel/assets/owl.carousel.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/Magnific-Popup/dist/magnific-popup.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/jquery-ui/jquery-ui.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/slick/slick/slick.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/lightGallery-master/dist/css/lightgallery.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/settings.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/layers.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'plugins/revolution/css/navigation.css' %}"
+    />
+    <!-- Custom-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9
+      ]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+  <!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+  <!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
+  <body class="page-init">
+    <div class="header--sidebar"></div>
+    <header class="header" data-responsive="1199">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+              <p>
+                144-146, Jalan Taming Sari, 34000 Taiping, Perak - Hotline:
+                05-8073354
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="container">
+          <div class="menu-toggle"><span></span></div>
+          <div class="navigation__left">
+            <ul class="menu menu--left">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li class="current"><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'vault' %}">Cake's Vault</a></li>
+            </ul>
+          </div>
+          <a class="ps-logo" href="index.html"
+            ><img src="{% static 'images/logo-1.png' %}" alt=""
+          /></a>
+          <div class="navigation__right">
+            <ul class="menu menu--right">
+              <li class="menu-item-has-children">
+                <a href="blog-listing.html">Blogs</a>
+                <ul class="sub-menu">
+                  <li class="menu-item-has-children">
+                    <a href="blog-detail.html">Blog Detail</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Sample Menu #1</a></li>
+                      <li><a href="#">Sample Menu #2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Contact</a>
+                <ul class="sub-menu">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="ps-cart">
+              <a class="ps-cart__toggle" href="#"
+                ><span><i>20</i></span
+                ><i class="ps-icon--shopping-cart"></i
+              ></a>
+              <div class="ps-cart__listing">
+                <div class="ps-cart__content">
+                  <div class="ps-cart-item">
+                    <a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail">
+                      <a href="product-detail.html"></a
+                      ><img src="images/cake/img-cake-1.jpg" alt="" />
+                    </div>
+                    <div class="ps-cart-item__content">
+                      <a class="ps-cart-item__title" href="product-detail.html"
+                        >Amazin’ Glazin’</a
+                      >
+                      <p>
+                        <span>Quantity:<i>12</i></span
+                        ><span>Total:<i>£176</i></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item">
+                    <a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail">
+                      <a href="product-detail.html"></a
+                      ><img src="images/cake/img-cake-2.jpg" alt="" />
+                    </div>
+                    <div class="ps-cart-item__content">
+                      <a class="ps-cart-item__title" href="product-detail.html"
+                        >The Crusty Croissant</a
+                      >
+                      <p>
+                        <span>Quantity:<i>12</i></span
+                        ><span>Total:<i>£176</i></span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item">
+                    <a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail">
+                      <a href="product-detail.html"></a
+                      ><img src="images/cake/img-cake-3.jpg" alt="" />
+                    </div>
+                    <div class="ps-cart-item__content">
+                      <a class="ps-cart-item__title" href="product-detail.html"
+                        >The Rolling Pin</a
+                      >
+                      <p>
+                        <span>Quantity:<i>12</i></span
+                        ><span>Total:<i>£176</i></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="ps-cart__total">
+                  <p>Number of items:<span>36</span></p>
+                  <p>Item Total:<span>£528.00</span></p>
+                </div>
+                <div class="ps-cart__footer">
+                  <a class="ps-btn ps-btn--view-bag" href="cart.html"
+                    >View bag</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="back2top"><i class="fa fa-angle-up"></i></div>
+    <div class="loader"></div>
+    <div class="page-wrap">
+      <div class="ps-section--hero">
+        <img src="{% static 'images/hero/03.jpg' %}" alt="" />
+        <div class="ps-section__content text-center">
+          <h3 class="ps-section__title">TAIPING BAKERY</h3>
+          <div class="ps-breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li class="active">About Us</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      {% for bake in baker %}
+      <div class="ps-section ps-section--about pt-100 pb-40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+              <div class="ps-section__header text-center">
+                <div class="ps-section__top">Our Baker</div>
+                <h3 class="ps-section__title">{{ bake.name }}</h3>
+              </div>
+              <div class="ps-section__content text-center">
+                <p>
+                  “{{ bake.description }}”
+                </p>
+                <div class="ps-about__sign text-center mb-30 mt-40">
+                  <img src="{% static 'images/about/img-signature.png' %}" alt="" />
+                </div>
+                <p class="ps-about-sign">CEO - Vanila Bakery Shop</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+              <img src="{% static 'images/about/about-intro.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="ps-section ps-section--award pt-80 pb-40">
+        <div class="container">
+          <div class="ps-section__header text-center mb-50">
+            <div class="ps-section__top">Our Record</div>
+            <h3 class="ps-section__title">WINNER AWARDS</h3>
+          </div>
+          <div class="ps-section__content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="ps-award text-center">
+                  <div class="ps-award__icon">
+                    <img src="images/award/01.png" alt="" />
+                  </div>
+                  <div class="ps-award__content">
+                    <h3>BAKERY OF THE YEAR</h3>
+                    <span>2010 - 2012</span>
+                    <p>
+                      Tart bear claw cake tiramisu chocolate bar gummies dragée
+                      lemon drops brownie. Jujubes chocolate cake sesame snaps
+                    </p>
+                    <a class="ps-btn ps-btn--xs" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="ps-award text-center">
+                  <div class="ps-award__icon">
+                    <img src="images/award/02.png" alt="" />
+                  </div>
+                  <div class="ps-award__content">
+                    <h3>CUPCAKES SHOP OF THE YEAR</h3>
+                    <span>2010 - 2012</span>
+                    <p>
+                      Tart bear claw cake tiramisu chocolate bar gummies dragée
+                      lemon drops brownie. Jujubes chocolate cake sesame snaps
+                    </p>
+                    <a class="ps-btn ps-btn--xs" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="ps-award text-center">
+                  <div class="ps-award__icon">
+                    <img src="images/award/02.png" alt="" />
+                  </div>
+                  <div class="ps-award__content">
+                    <h3>BAKERY OF THE MONTH</h3>
+                    <span>2010 - 2012</span>
+                    <p>
+                      Tart bear claw cake tiramisu chocolate bar gummies dragée
+                      lemon drops brownie. Jujubes chocolate cake sesame snaps
+                    </p>
+                    <a class="ps-btn ps-btn--xs" href="#">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        class="ps-section ps-section--team ps-section--team-2 pt-80 pb-80"
+      >
+        <div class="container">
+          <div class="ps-section__header text-center">
+            <div class="ps-section__top">Golden Hand</div>
+            <h3 class="ps-section__title ps-section__title--full">OUR TEAM</h3>
+          </div>
+          <div class="ps-section__content">
+            <div class="row">
+              {% for baker in baker_team %}
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <article class="ps-people ps-people--2">
+                  <div class="ps-people__thumbnail">
+                    <a class="ps-people__overlay" href="#"></a
+                    ><img src="{{ baker.photo.url}}" alt="" />
+                  </div>
+                  <div class="ps-people__content">
+                    <h4>{{ baker.name }}</h4>
+                    <span class="ps-people__position">{{baker.designation}}</span>
+                    <p>
+                      {{baker.description}}
+                    </p>
+                    <ul class="ps-people__social">
+                      <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ps-section ps-section--partner">
+        <div class="container">
+          <div
+            class="owl-slider"
+            data-owl-auto="true"
+            data-owl-loop="true"
+            data-owl-speed="10000"
+            data-owl-gap="40"
+            data-owl-nav="false"
+            data-owl-dots="false"
+            data-owl-animate-in=""
+            data-owl-animate-out=""
+            data-owl-item="6"
+            data-owl-item-xs="3"
+            data-owl-item-sm="4"
+            data-owl-item-md="5"
+            data-owl-item-lg="6"
+            data-owl-nav-left='&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;'
+            data-owl-nav-right='&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;'
+          >
+            <a href="#"><img src="images/partner/1.png" alt="" /></a
+            ><a href="#"><img src="images/partner/2.png" alt="" /></a
+            ><a href="#"><img src="images/partner/3.png" alt="" /></a
+            ><a href="#"><img src="images/partner/4.png" alt="" /></a
+            ><a href="#"><img src="images/partner/5.png" alt="" /></a
+            ><a href="#"><img src="images/partner/6.png" alt="" /></a
+            ><a href="#"><img src="images/partner/7.png" alt="" /></a
+            ><a href="#"><img src="images/partner/8.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <section class="ps-section ps-section--subscribe pt-80 pb-80">
+        <div class="container">
+          <div class="ps-subscribe">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h4>ABOUT US</h4>
+                <p>
+                  Te pri oblique ullamcorper, magna persequeris has eu. Mei
+                  prompta dolores examad debet suavitate. Pri te vocibus
+                  electram. Eu eleifend rationibus vis, at.
+                </p>
+                <p class="text-uppercase ps-subscribe__highlight">
+                  240 CENTRAL PARK, LONDON, OR 10019
+                </p>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <a class="ps-subscribe__logo" href="index.html"
+                  ><img src="images/logo-1.png" alt=""
+                /></a>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h4>SUBSCRIBE EMAIL</h4>
+                <p>
+                  Give us your email, and we shall send regular updates for new
+                  stuff and events.
+                </p>
+                <form
+                  class="ps-subscribe__form"
+                  method="post"
+                  action="http://nouthemes.net/html/bakery/_action"
+                >
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Type your email..."
+                  />
+                  <button class="ps-btn ps-btn--sm">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="ps-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--payment">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">PAYMENTS ACCEPTED</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/1.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/2.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/3.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/4.png' %}" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/5.png' %}" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--worktime">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">WORK TIME</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <p><strong>Monday - Friday</strong> 8:00 am - 8:30 pm</p>
+                  <p><strong>Satuday - Sunday</strong>10:00 am - 16:30 pm</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="ps-widget ps-widget--footer ps-widget--connect">
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">CONNECT US</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <ul class="ps-widget__social">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                  <a href="#"
+                    ><img src="{% static 'images/app.jpg' %}" alt=""
+                  /></a>
+                  <p>@2021 Design by<a href="#"> Noesis Studio</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS Library-->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery/dist/jquery.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap/dist/js/bootstrap.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/owl-carousel/owl.carousel.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/overflow-text.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/masonry.pkgd.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/imagesloaded.pkgd.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-bar-rating/dist/jquery.barrating.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-nice-select/js/jquery.nice-select.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/Magnific-Popup/dist/jquery.magnific-popup.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/jquery-ui/jquery-ui.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/moment.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/slick/slick/slick.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/gmap3.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/lightGallery-master/dist/js/lightgallery-all.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB458d7lg9ttCaCfXKPEf-LBAebMMw5RaU&amp;region=GB"
+    ></script>
+    <!-- Revolution - slider-->
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"
+    ></script>
+    <!-- Custom scripts-->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </body>
+
+  <!-- Mirrored from nouthemes.net/html/bakery/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Aug 2020 10:08:14 GMT -->
+</html>
