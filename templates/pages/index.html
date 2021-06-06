@@ -342,14 +342,14 @@
                   {% endif %}
                   <a
                     class="ps-product__overlay"
-                    href="{% url 'cupcake' best_seller.id %}"
+                    href="{{ best_seller.get_absolute_url }}"
                   ></a
                   ><img src="{{best_seller.photo.url}}" alt="" />
                 </div>
                 <div class="ps-product__content">
                   <a
                     class="ps-product__title"
-                    href="{% url 'cupcake' best_seller.id %}"
+                    href="{{ best_seller.get_absolute_url }}"
                     >{{ best_seller.name }}</a
                   >{% if best_seller.after_discount %}
                   <p class="ps-product__price">RM {{ best_seller.after_discount }}</p>
@@ -499,13 +499,13 @@
                   <div class="ps-product__thumbnail">
                     <a
                       class="ps-product__overlay"
-                      href="{% url 'cupcake' hot_cake.id %}"
+                      href="{{ hot_cake.get_absolute_url }}"
                     ></a
                     ><img src="{{ hot_cake.photo.url }}" alt="" />
                   </div>
                   <div class="ps-product__content">
                     <h4 class="ps-product__title">
-                      <a href="{% url 'cupcake' hot_cake.id %}"
+                      <a href="{{ hot_cake.get_absolute_url }}"
                         >{{ hot_cake.name }}</a
                       >
                     </h4>
@@ -517,7 +517,7 @@
                     </p>
                     <a
                       class="ps-btn ps-btn--xs"
-                      href="{% url 'cupcake' hot_cake.id %}"
+                      href="{{ hot_cake.get_absolute_url }}"
                       >Order now<i class="fa fa-angle-right"></i
                     ></a>
                     {% else %}
@@ -543,13 +543,13 @@
                   <div class="ps-product__thumbnail">
                     <a
                       class="ps-product__overlay"
-                      href="{% url 'cupcake' new_cake.id %}"
+                      href="{{ new_cake.get_absolute_url }}"
                     ></a
                     ><img src="{{ new_cake.photo.url }}" alt="" />
                   </div>
                   <div class="ps-product__content">
                     <h4 class="ps-product__title">
-                      <a href="{% url 'cupcake' new_cake.id %}"
+                      <a href="{{ new_cake.get_absolute_url }}"
                         >{{new_cake.name}}</a
                       >
                     </h4>
@@ -561,7 +561,7 @@
                     </p>
                     <a
                       class="ps-btn ps-btn--xs"
-                      href="{% url 'cupcake' new_cake.id %}"
+                      href="{{ new_cake.get_absolute_url }}"
                       >Order now<i class="fa fa-angle-right"></i
                     ></a>
                     {% else %}

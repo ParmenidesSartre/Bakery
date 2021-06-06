@@ -8,7 +8,7 @@ def vault(request):
     if query:
         menus = Menu.objects.filter(name__icontains=query)
     else:
-        menus =  Menu.objects.order_by('added_on').all()
+        menus = Menu.objects.order_by('added_on').all()
     
     paginator = Paginator(menus, 4)
     page = request.GET.get('page')
@@ -20,8 +20,8 @@ def vault(request):
 
     return render(request, 'pages/product-listing.html', context)
 
-def cupcake(request, listing_id):
-    listing = get_object_or_404(Menu, pk=listing_id)
+def cupcake(request, name):
+    listing = get_object_or_404(Menu, slug=name)
     cart_product_form = CartAddProductForm()
     context = {
         'listing' : listing,

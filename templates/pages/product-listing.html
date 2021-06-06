@@ -161,13 +161,13 @@
                       {% endif %}
                       <a
                         class="ps-product__overlay"
-                        href="{% url 'cupcake' menu.id %}"
+                        href="{{ menu.get_absolute_url }}"
                       ></a
                       ><img src="{{ menu.photo.url }}" alt="" />
                     </div>
                     <div class="ps-product__content">
                       <h4 class="ps-product__title">
-                        <a href="{% url 'cupcake' menu.id %}"
+                        <a href="{{ menu.get_absolute_url }}"
                           >{{ menu.name }}</a
                         >
                       </h4>
@@ -188,7 +188,7 @@
                         snaps chocolate cake.
                       </p>
                       <footer class="ps-product__footer clearfix">
-                        <a class="ps-btn ps-btn--sm" href="{% url 'cupcake' menu.id %}"
+                        <a class="ps-btn ps-btn--sm" href="{{ menu.get_absolute_url }}"
                           >Order now<i class="fa fa-angle-right"></i
                         ></a>
                       </footer>
