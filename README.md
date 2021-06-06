@@ -8,7 +8,22 @@ Live version is [here](https://demo-taipingbakery.herokuapp.com/about/)
 
 
 **Home Page**
-![Home Page](/screenshots/homePage.png?raw=true "Optional Title")
+![Home Page](https://github.com/ParmenidesSartre/Bakery/blob/master/TinyTake06-06-2021-06-03-06.png)
+
+---
+
+**Detail Listing**
+![Detail Listing](https://github.com/ParmenidesSartre/Bakery/blob/master/TinyTake06-06-2021-06-04-09.png)
+
+---
+
+**Bucket**
+![Bucket](https://github.com/ParmenidesSartre/Bakery/blob/master/TinyTake06-06-2021-06-05-00.png)
+
+---
+
+**Checkout**
+![Checkout](https://github.com/ParmenidesSartre/Bakery/blob/master/TinyTake06-06-2021-06-05-38.png)
 
 ---
 
