@@ -119,29 +119,6 @@
           <a class="ps-logo" href="{% url 'index' %}"
             ><img src="{% static 'images/logo-1.png' %}" alt=""
           /></a>
-          <div class="navigation__right">
-            <ul class="menu menu--right">
-              <li class="menu-item-has-children">
-                <a href="blog-listing.html">Blogs</a>
-                <ul class="sub-menu">
-                  <li class="menu-item-has-children">
-                    <a href="blog-detail.html">Blog Detail</a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Sample Menu #1</a></li>
-                      <li><a href="#">Sample Menu #2</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item-has-children">
-                <a href="#">Contact</a>
-                <ul class="sub-menu">
-                  <li><a href="contact.html">Contact 1</a></li>
-                  <li><a href="contact-2.html">Contact 2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
@@ -249,7 +226,7 @@
                     </li>
                     {% else %}
                     <li>
-                      <a><i class="fa fa-arrow-right disabled"></i></a>
+                      <a class="disabled"><i class="fa fa-arrow-right"></i></a>
                     </li>
                     {% endif %}
                   </ul>
@@ -345,21 +322,69 @@
                     </div>
                   </div>
                 </aside>
-                <aside class="ps-widget ps-widget--sidebar ps-widget--tags">
-                  <div class="ps-widget__header">
-                    <h3 class="ps-widget__title">TAGS</h3>
+                <aside
+                class="ps-widget ps-widget--sidebar ps-widget--best-seller"
+              >
+                <div class="ps-widget__header">
+                  <h3 class="ps-widget__title">Best seller</h3>
+                </div>
+                <div class="ps-widget__content">
+                  <div class="ps-product--sidebar">
+                    <div class="ps-product__thumbnail">
+                      <a
+                        class="ps-product__overlay"
+                        href="product-detail.html"
+                      ></a
+                      ><img src="images/cake/img-cake-12.jpg" alt="" />
+                    </div>
+                    <div class="ps-product__content">
+                      <h4 class="ps-product__title">
+                        <a href="product-detail.html">Amazin’ Glazin’</a>
+                      </h4>
+                      <p class="ps-product__price"><del>£25.00</del>£15.00</p>
+                      <a class="ps-btn ps-btn--xs" href="product-detail.html"
+                        >Purchase</a
+                      >
+                    </div>
                   </div>
-                  <div class="ps-widget__content">
-                    <ul class="ps-tags">
-                      <li><a href="#">Cupcake</a></li>
-                      <li><a href="#">vanila</a></li>
-                      <li><a href="#">sugar flower</a></li>
-                      <li><a href="#">vanila</a></li>
-                      <li><a href="#">coconut</a></li>
-                      <li><a href="#">vanila</a></li>
-                    </ul>
+                  <div class="ps-product--sidebar">
+                    <div class="ps-product__thumbnail">
+                      <a
+                        class="ps-product__overlay"
+                        href="product-detail.html"
+                      ></a
+                      ><img src="images/cake/img-cake-3.jpg" alt="" />
+                    </div>
+                    <div class="ps-product__content">
+                      <h4 class="ps-product__title">
+                        <a href="product-detail.html">The Crusty Croissant</a>
+                      </h4>
+                      <p class="ps-product__price"><del>£25.00</del>£15.00</p>
+                      <a class="ps-btn ps-btn--xs" href="product-detail.html"
+                        >Purchase</a
+                      >
+                    </div>
                   </div>
-                </aside>
+                  <div class="ps-product--sidebar">
+                    <div class="ps-product__thumbnail">
+                      <a
+                        class="ps-product__overlay"
+                        href="product-detail.html"
+                      ></a
+                      ><img src="images/cake/img-cake-7.jpg" alt="" />
+                    </div>
+                    <div class="ps-product__content">
+                      <h4 class="ps-product__title">
+                        <a href="product-detail.html">The Rolling Pin</a>
+                      </h4>
+                      <p class="ps-product__price"><del>£25.00</del>£15.00</p>
+                      <a class="ps-btn ps-btn--xs" href="product-detail.html"
+                        >Purchase</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </aside>
               </div>
             </div>
           </div>
@@ -379,30 +404,6 @@
                 <p class="text-uppercase ps-subscribe__highlight">
                   144-146, Jalan Taming Sari, 34000 Taiping, Perak
                 </p>
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                <a class="ps-subscribe__logo" href="index.html"
-                  ><img src="images/logo-1.png" alt=""
-                /></a>
-              </div>
-              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                <h4>SUBSCRIBE EMAIL</h4>
-                <p>
-                  Give us your email, and we shall send regular updates for new
-                  stuff and events.
-                </p>
-                <form
-                  class="ps-subscribe__form"
-                  method="post"
-                  action="http://nouthemes.net/html/bakery/_action"
-                >
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Type your email..."
-                  />
-                  <button class="ps-btn ps-btn--sm">Subscribe</button>
-                </form>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ def vault(request):
     if query:
         menus = Menu.objects.filter(name__icontains=query)
     else:
-        menus =  Menu.objects.order_by('-added_on').all()
+        menus =  Menu.objects.order_by('added_on').all()
     
     paginator = Paginator(menus, 5)
     page = request.GET.get('page')
