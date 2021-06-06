@@ -11,6 +11,5 @@ class Menu(models.Model):
     description = models.TextField(max_length=300, blank=True)
     best_seller = models.BooleanField()
 
-
     def __str__(self):
         return self.name
