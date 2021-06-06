@@ -6,6 +6,12 @@ Live version is [here](https://demo-taipingbakery.herokuapp.com/about/)
 ## Problem Statements
 - Covid 19 causes problems to small businesses. They required solutions which is small and cheap in order to allow them to modernize their work flow. This small eCommerce solution would be able to help with this.
 
+
+**Home Page**
+![Home Page](/screenshots/homePage.png?raw=true "Optional Title")
+
+---
+
 ## Getting Started
 To get started  you can simply clone this `bakery` repository and install the dependencies.
 
