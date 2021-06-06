@@ -4,7 +4,6 @@ Django-based eCommerce solution for a fictional local bakery.
 Live version is [here](https://demo-taipingbakery.herokuapp.com/about/)
 
 ## Problem Statements
-### Management
 - Covid 19 causes problems to small businesses. They required solutions which is small and cheap in order to allow them to modernize their work flow. This small eCommerce solution would be able to help with this.
 
 ## Getting Started
