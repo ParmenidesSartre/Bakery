@@ -335,14 +335,29 @@
               {% if best_sellers %} {% for best_seller in best_sellers %}
               <div class="ps-product">
                 <div class="ps-product__thumbnail">
-                  <a class="ps-product__overlay" href="{% url 'cupcake' best_seller.id %}"></a
+                  {% if best_seller.discount %}
+                  <div class="ps-badge">
+                    <span>-{{best_seller.discount}}%</span>
+                  </div>
+                  {% endif %}
+                  <a
+                    class="ps-product__overlay"
+                    href="{% url 'cupcake' best_seller.id %}"
+                  ></a
                   ><img src="{{best_seller.photo.url}}" alt="" />
                 </div>
                 <div class="ps-product__content">
-                  <a class="ps-product__title" href="{% url 'cupcake' best_seller.id %}"
+                  <a
+                    class="ps-product__title"
+                    href="{% url 'cupcake' best_seller.id %}"
                     >{{ best_seller.name }}</a
-                  >
-                  <p class="ps-product__price">RM {{ best_seller.price }}</p>
+                  >{% if best_seller.after_discount %}
+                  <p class="ps-product__price">RM {{ best_seller.after_discount }}</p>
+                  {% else %}
+                  <p class="ps-product__price">
+                    RM {{ best_seller.price}}
+                  </p>
+                  {% endif %}
                 </div>
               </div>
               {% endfor %} {% else %}
@@ -490,17 +505,19 @@
                   </div>
                   <div class="ps-product__content">
                     <h4 class="ps-product__title">
-                      <a href="{% url 'cupcake' hot_cake.id %}">{{ hot_cake.name }}</a>
+                      <a href="{% url 'cupcake' hot_cake.id %}"
+                        >{{ hot_cake.name }}</a
+                      >
                     </h4>
-                    <p>
-                      {{ hot_cake.description }}
-                    </p>
+                    <p>{{ hot_cake.description }}</p>
                     {% if hot_cake.after_discount %}
                     <p class="ps-product__price">
                       <del>RM {{hot_cake.price}}</del>RM
                       {{hot_cake.after_discount}}
                     </p>
-                    <a class="ps-btn ps-btn--xs" href="{% url 'cupcake' hot_cake.id %}"
+                    <a
+                      class="ps-btn ps-btn--xs"
+                      href="{% url 'cupcake' hot_cake.id %}"
                       >Order now<i class="fa fa-angle-right"></i
                     ></a>
                     {% else %}
@@ -532,17 +549,19 @@
                   </div>
                   <div class="ps-product__content">
                     <h4 class="ps-product__title">
-                      <a href="{% url 'cupcake' new_cake.id %}">{{new_cake.name}}</a>
+                      <a href="{% url 'cupcake' new_cake.id %}"
+                        >{{new_cake.name}}</a
+                      >
                     </h4>
-                    <p>
-                      {{new_cake.description}}
-                    </p>
+                    <p>{{new_cake.description}}</p>
                     {% if new_cake.after_discount %}
                     <p class="ps-product__price">
                       <del>RM {{new_cake.price}}</del>RM
                       {{new_cake.after_discount}}
                     </p>
-                    <a class="ps-btn ps-btn--xs" href="{% url 'cupcake' new_cake.id %}"
+                    <a
+                      class="ps-btn ps-btn--xs"
+                      href="{% url 'cupcake' new_cake.id %}"
                       >Order now<i class="fa fa-angle-right"></i
                     ></a>
                     {% else %}
@@ -559,7 +578,7 @@
           </div>
         </div>
       </section>
-<!--       <section
+      <!--       <section
         class="ps-section ps-section--team ps-section--pattern pt-80 pb-80"
       >
         <div class="container">
@@ -671,14 +690,23 @@
             data-owl-nav-left='&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;'
             data-owl-nav-right='&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;'
           >
-            <a href="#"><img src="{% static 'images/partner/1.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/2.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/3.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/4.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/5.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/6.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/7.png' %}" alt="" /></a
-            ><a href="#"><img src="{% static 'images/partner/8.png' %}" alt="" /></a>
+            <a href="#"
+              ><img src="{% static 'images/partner/1.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/2.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/3.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/4.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/5.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/6.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/7.png' %}" alt="" /></a
+            ><a href="#"
+              ><img src="{% static 'images/partner/8.png' %}" alt=""
+            /></a>
           </div>
         </div>
       </div>
