@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.fields import BooleanField
 from django.urls import reverse
+from django_resized import ResizedImageField
 import math
 
 
@@ -12,7 +13,8 @@ class Menu(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     hot_item = models.BooleanField(default=False)
     added_on = models.DateField(auto_now_add=True)
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    # photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    photo =  ResizedImageField(size=[1000, 1077], crop=['middle', 'center'], upload_to='photos/%Y/%m/%d/',default='default.jpg')
     description = models.TextField(max_length=300, blank=True)
     best_seller = models.BooleanField()
 
