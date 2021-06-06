@@ -10,7 +10,7 @@ def vault(request):
     else:
         menus =  Menu.objects.order_by('added_on').all()
     
-    paginator = Paginator(menus, 5)
+    paginator = Paginator(menus, 4)
     page = request.GET.get('page')
     paged_listings = paginator.get_page(page)
 
