@@ -10,6 +10,7 @@ django-resized = "*"
 braintree = "==3.59.0"
 whitenoise = "*"
 gunicorn = "==19.7.1"
+django-csv-exports = "*"
 
 [dev-packages]
 

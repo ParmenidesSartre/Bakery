@@ -1,5 +1,6 @@
 from django.db import models
 from menu.models import Menu
+from django_csv_exports.admin import CSVExportAdmin    
 
 
 class Order(models.Model):
@@ -39,3 +40,7 @@ class OrderItem(models.Model):
 
     def get_cost(self):
         return self.price * self.quantity
+
+
+class ClientAdmin(CSVExportAdmin):
+    csv_fields = ['first_name', 'last_name', 'email',]

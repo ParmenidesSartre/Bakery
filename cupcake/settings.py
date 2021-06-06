@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
-    'payment.apps.PaymentConfig'
+    'payment.apps.PaymentConfig',
+    'django_csv_exports',
 ]
 
 CART_SESSION_ID = 'cart'
