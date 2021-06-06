@@ -156,6 +156,9 @@
                   {% if menus %} {% for menu in menus %}
                   <div class="ps-product--list ps-product--list-large">
                     <div class="ps-product__thumbnail">
+                      {% if menu.discount %}
+                        <div class="ps-badge"><span>{{ menu.discount }}%</span></div>
+                      {% endif %}
                       <a
                         class="ps-product__overlay"
                         href="{% url 'cupcake' menu.id %}"
