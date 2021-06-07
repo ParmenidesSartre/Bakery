@@ -157,7 +157,9 @@
                   <div class="ps-product--list ps-product--list-large">
                     <div class="ps-product__thumbnail">
                       {% if menu.discount %}
-                        <div class="ps-badge"><span>-{{ menu.discount }}%</span></div>
+                      <div class="ps-badge">
+                        <span>-{{ menu.discount }}%</span>
+                      </div>
                       {% endif %}
                       <a
                         class="ps-product__overlay"
@@ -188,7 +190,9 @@
                         snaps chocolate cake.
                       </p>
                       <footer class="ps-product__footer clearfix">
-                        <a class="ps-btn ps-btn--sm" href="{{ menu.get_absolute_url }}"
+                        <a
+                          class="ps-btn ps-btn--sm"
+                          href="{{ menu.get_absolute_url }}"
                           >Order now<i class="fa fa-angle-right"></i
                         ></a>
                       </footer>
@@ -213,13 +217,12 @@
                     <li>
                       <a><i class="fa fa-arrow-left disabled"></i></a>
                     </li>
+                    {% endif %} {% for i in menus.paginator.page_range %} 
+                    {% if menus.number == i %}
+                    <li class="active"><a>{{i}}</a></li>
+                    {% else %}
+                    <li><a href="?page={{i}}">{{i}}</a></li>
                     {% endif %} 
-                    {% for i in menus.paginator.page_range %} 
-                      {% if menus.number == i %}
-                        <li class="active"><a>{{i}}</a></li>
-                      {% else %}
-                          <li><a href="?page={{i}}">{{i}}</a></li>
-                      {% endif %} 
                     {% endfor %} 
                     {% if menus.has_next %}
                     <li>
@@ -266,128 +269,81 @@
                   class="ps-widget ps-widget--sidebar ps-widget--best-seller"
                 >
                   <div class="ps-widget__header">
-                    <h3 class="ps-widget__title">Best seller</h3>
+                    <h3 class="ps-widget__title">New Cakes</h3>
                   </div>
                   <div class="ps-widget__content">
+                    {% for new in new_cakes %}
                     <div class="ps-product--sidebar">
                       <div class="ps-product__thumbnail">
                         <a
                           class="ps-product__overlay"
-                          href="product-detail.html"
+                          href="{{ new.get_absolute_url }}"
                         ></a
-                        ><img src="images/cake/img-cake-12.jpg" alt="" />
+                        ><img src="{{ new.photo.url }}" alt="" />
                       </div>
                       <div class="ps-product__content">
                         <h4 class="ps-product__title">
-                          <a href="product-detail.html">Amazin’ Glazin’</a>
+                          <a href="{{ new.get_absolute_url }}"
+                            >{{ new.name }}</a
+                          >
                         </h4>
-                        <p class="ps-product__price"><del>£25.00</del>£15.00</p>
-                        <a class="ps-btn ps-btn--xs" href="product-detail.html"
-                          >Purchase</a
-                        >
-                      </div>
-                    </div>
-                    <div class="ps-product--sidebar">
-                      <div class="ps-product__thumbnail">
+                        {% if after_discount %}
+                        <p class="ps-product__price">RM {{ new.price }}</p>
+                        {% else %}
+                        <p class="ps-product__price">
+                          <del>RM {{ new.price }}</del>RM {{new.after_discount}}
+                        </p>
+                        {% endif %}
                         <a
-                          class="ps-product__overlay"
-                          href="product-detail.html"
-                        ></a
-                        ><img src="images/cake/img-cake-3.jpg" alt="" />
-                      </div>
-                      <div class="ps-product__content">
-                        <h4 class="ps-product__title">
-                          <a href="product-detail.html">The Crusty Croissant</a>
-                        </h4>
-                        <p class="ps-product__price"><del>£25.00</del>£15.00</p>
-                        <a class="ps-btn ps-btn--xs" href="product-detail.html"
+                          class="ps-btn ps-btn--xs"
+                          href="{{ new.get_absolute_url }}"
                           >Purchase</a
                         >
                       </div>
                     </div>
-                    <div class="ps-product--sidebar">
-                      <div class="ps-product__thumbnail">
-                        <a
-                          class="ps-product__overlay"
-                          href="product-detail.html"
-                        ></a
-                        ><img src="images/cake/img-cake-7.jpg" alt="" />
-                      </div>
-                      <div class="ps-product__content">
-                        <h4 class="ps-product__title">
-                          <a href="product-detail.html">The Rolling Pin</a>
-                        </h4>
-                        <p class="ps-product__price"><del>£25.00</del>£15.00</p>
-                        <a class="ps-btn ps-btn--xs" href="product-detail.html"
-                          >Purchase</a
-                        >
-                      </div>
-                    </div>
+                    {% endfor %}
                   </div>
                 </aside>
                 <aside
-                class="ps-widget ps-widget--sidebar ps-widget--best-seller"
-              >
-                <div class="ps-widget__header">
-                  <h3 class="ps-widget__title">Best seller</h3>
-                </div>
-                <div class="ps-widget__content">
-                  <div class="ps-product--sidebar">
-                    <div class="ps-product__thumbnail">
-                      <a
-                        class="ps-product__overlay"
-                        href="product-detail.html"
-                      ></a
-                      ><img src="images/cake/img-cake-12.jpg" alt="" />
-                    </div>
-                    <div class="ps-product__content">
-                      <h4 class="ps-product__title">
-                        <a href="product-detail.html">Amazin’ Glazin’</a>
-                      </h4>
-                      <p class="ps-product__price"><del>£25.00</del>£15.00</p>
-                      <a class="ps-btn ps-btn--xs" href="product-detail.html"
-                        >Purchase</a
-                      >
-                    </div>
+                  class="ps-widget ps-widget--sidebar ps-widget--best-seller"
+                >
+                  <div class="ps-widget__header">
+                    <h3 class="ps-widget__title">Best seller</h3>
                   </div>
-                  <div class="ps-product--sidebar">
-                    <div class="ps-product__thumbnail">
-                      <a
-                        class="ps-product__overlay"
-                        href="product-detail.html"
-                      ></a
-                      ><img src="images/cake/img-cake-3.jpg" alt="" />
+                  <div class="ps-widget__content">
+                    {% for best in best_sellers %}
+                    <div class="ps-product--sidebar">
+                      <div class="ps-product__thumbnail">
+                        <a
+                          class="ps-product__overlay"
+                          href="{{ best.get_absolute_url }}"
+                        ></a
+                        ><img src="{{ best.photo.url }}" alt="" />
+                      </div>
+                      <div class="ps-product__content">
+                        <h4 class="ps-product__title">
+                          <a href="{{ best.get_absolute_url }}"
+                            >{{ best.name }}</a
+                          >
+                        </h4>
+                        {% if after_discount %}
+                        <p class="ps-product__price">RM {{ best.price }}</p>
+                        {% else %}
+                        <p class="ps-product__price">
+                          <del>RM {{ best.price }}</del>RM
+                          {{best.after_discount}}
+                        </p>
+                        {% endif %}
+                        <a
+                          class="ps-btn ps-btn--xs"
+                          href="{{ best.get_absolute_url }}"
+                          >Purchase</a
+                        >
+                      </div>
                     </div>
-                    <div class="ps-product__content">
-                      <h4 class="ps-product__title">
-                        <a href="product-detail.html">The Crusty Croissant</a>
-                      </h4>
-                      <p class="ps-product__price"><del>£25.00</del>£15.00</p>
-                      <a class="ps-btn ps-btn--xs" href="product-detail.html"
-                        >Purchase</a
-                      >
-                    </div>
+                    {% endfor %}
                   </div>
-                  <div class="ps-product--sidebar">
-                    <div class="ps-product__thumbnail">
-                      <a
-                        class="ps-product__overlay"
-                        href="product-detail.html"
-                      ></a
-                      ><img src="images/cake/img-cake-7.jpg" alt="" />
-                    </div>
-                    <div class="ps-product__content">
-                      <h4 class="ps-product__title">
-                        <a href="product-detail.html">The Rolling Pin</a>
-                      </h4>
-                      <p class="ps-product__price"><del>£25.00</del>£15.00</p>
-                      <a class="ps-btn ps-btn--xs" href="product-detail.html"
-                        >Purchase</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </aside>
+                </aside>
               </div>
             </div>
           </div>
@@ -424,19 +380,29 @@
                 <div class="ps-widget__content">
                   <ul>
                     <li>
-                      <a href="#"><img src="{% static 'images/payment/1.png' %}" alt="" /></a>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/1.png' %}" alt=""
+                      /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{% static 'images/payment/2.png' %}" alt="" /></a>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/2.png' %}" alt=""
+                      /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{% static 'images/payment/3.png' %}" alt="" /></a>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/3.png' %}" alt=""
+                      /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{% static 'images/payment/4.png' %}" alt="" /></a>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/4.png' %}" alt=""
+                      /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="{% static 'images/payment/5.png' %}" alt="" /></a>
+                      <a href="#"
+                        ><img src="{% static 'images/payment/5.png' %}" alt=""
+                      /></a>
                     </li>
                   </ul>
                 </div>

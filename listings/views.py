@@ -14,8 +14,13 @@ def vault(request):
     page = request.GET.get('page')
     paged_listings = paginator.get_page(page)
 
+    best_sellers = Menu.objects.filter(best_seller = True)
+    new_cakes = Menu.objects.order_by('-added_on')[:3]
+
     context = {
-        'menus' : paged_listings
+        'menus' : paged_listings,
+        'best_sellers' : best_sellers,
+        'new_cakes' : new_cakes
     }
 
     return render(request, 'pages/product-listing.html', context)
