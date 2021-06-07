@@ -42,6 +42,7 @@ cd ecommerce-demo
 Install dependencies with this command:
 ```bash
 pipenv install
+pipenv shell
 ```
 
 Run the application with this command:
