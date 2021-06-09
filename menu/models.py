@@ -18,6 +18,9 @@ class Menu(models.Model):
     description = models.TextField(max_length=300, blank=True)
     best_seller = models.BooleanField()
 
+    class Meta:
+        ordering = ['-added_on']
+
     @property
     def discount(self):
       # discount value calculator
