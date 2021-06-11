@@ -1,0 +1,28 @@
+{% load static %}
+<nav class="navigation">
+  <div class="container">
+    <div class="menu-toggle"><span></span></div>
+    <div class="navigation__left">
+      <ul class="menu menu--left">
+        {% if request.path == '/' %}
+            <li class="current"><a href="{% url 'index' %}">Home</a></li>
+        {% else %}
+            <li><a href="{% url 'index' %}">Home</a></li>
+        {% endif %}
+        {% if 'about' in  request.path  %}
+            <li class="current"><a href="{% url 'about' %}">About</a></li>
+        {% else %}
+            <li><a href="{% url 'about' %}">About</a></li>
+        {% endif %}
+        {% if 'listings' in request.path %}
+            <li class='current'><a href="{% url 'vault' %}">Cake's Vault</a></li>
+        {% else %}
+            <li><a href="{% url 'vault' %}">Cake's Vault</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <a class="ps-logo" href="{% url 'index' %}"
+      ><img src="{% static 'images/logo-1.png' %}" alt=""
+    /></a>
+  </div>
+</nav>

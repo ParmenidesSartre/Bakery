@@ -8,7 +8,7 @@ class OrderCreateForm(forms.ModelForm):
     email  =  forms.CharField(widget=forms.TextInput(attrs={'class' : "form-control"}))
     address  =  forms.CharField(widget=forms.TextInput(attrs={'class' : "form-control"}))
     phone  =  forms.CharField(widget=forms.TextInput(attrs={'class' : "form-control"}))
-        
+    order_notes  =  forms.CharField(widget=forms.TextInput(attrs={'class' : "form-control"}))
 
     class Meta:
         model = Order

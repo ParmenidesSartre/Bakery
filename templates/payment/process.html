@@ -116,29 +116,6 @@
           <a class="ps-logo" href="{% url 'index' %}"
             ><img src="{% static 'images/logo-1.png' %}" alt=""
           /></a>
-          <div class="navigation__right">
-            <ul class="menu menu--right">
-              <li class="menu-item-has-children">
-                <a href="blog-listing.html">Blogs</a>
-                <ul class="sub-menu">
-                  <li class="menu-item-has-children">
-                    <a href="blog-detail.html">Blog Detail</a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Sample Menu #1</a></li>
-                      <li><a href="#">Sample Menu #2</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-item-has-children">
-                <a href="#">Contact</a>
-                <ul class="sub-menu">
-                  <li><a href="contact.html">Contact 1</a></li>
-                  <li><a href="contact-2.html">Contact 2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
@@ -198,19 +175,19 @@
                 <div class="ps-widget__content">
                   <ul>
                     <li>
-                      <a href="#"><img src="images/payment/1.png" alt="" /></a>
+                      <a href="#"><img src="{% static 'images/payment/1.png' %}" alt="" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/payment/2.png" alt="" /></a>
+                      <a href="#"><img src="{% static 'images/payment/2.png' %}" alt="" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/payment/3.png" alt="" /></a>
+                      <a href="#"><img src="{% static 'images/payment/3.png' %}" alt="" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/payment/4.png" alt="" /></a>
+                      <a href="#"><img src="{% static 'images/payment/4.png' %}" alt="" /></a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/payment/5.png" alt="" /></a>
+                      <a href="#"><img src="{% static 'images/payment/5.png' %}" alt="" /></a>
                     </li>
                   </ul>
                 </div>
@@ -224,21 +201,6 @@
                 <div class="ps-widget__content">
                   <p><strong>Monday - Friday</strong> 8:00 am - 8:30 pm</p>
                   <p><strong>Satuday - Sunday</strong>10:00 am - 16:30 pm</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <div class="ps-widget ps-widget--footer ps-widget--order">
-                <div class="ps-widget__header">
-                  <h3 class="ps-widget__title">ORDERS AND RETURNS</h3>
-                </div>
-                <div class="ps-widget__content">
-                  <ul class="ps-list--line">
-                    <li><a href="#">Order</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Policy Return Policy</a></li>
-                    <li><a href="#">Payments</a></li>
-                  </ul>
                 </div>
               </div>
             </div>
