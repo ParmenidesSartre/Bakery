@@ -93,7 +93,7 @@
                       ></a>
                     </li>
                     {% else %}
-                    <li>
+                    <li class="disabled">
                       <a><i class="fa fa-arrow-left disabled"></i></a>
                     </li>
                     {% endif %} {% for i in menus.paginator.page_range %} 
@@ -110,8 +110,8 @@
                       ></a>
                     </li>
                     {% else %}
-                    <li>
-                      <a class="disabled"><i class="fa fa-arrow-right"></i></a>
+                    <li class="disabled">
+                      <a><i class="fa fa-arrow-right"></i></a>
                     </li>
                     {% endif %}
                   </ul>
