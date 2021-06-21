@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.fields import BooleanField
 from django.urls import reverse
+from django.utils.html import mark_safe
 from django_resized import ResizedImageField
 import math
 
@@ -20,6 +21,12 @@ class Menu(models.Model):
 
     class Meta:
         ordering = ['-added_on']
+
+    @property
+    def thumbnail_preview(self):
+        if self.photo:
+            return mark_safe('<img src="{}" width="150" height="150" />'.format(self.photo.url))
+        return ''    
 
     @property
     def discount(self):
