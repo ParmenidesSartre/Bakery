@@ -24,5 +24,28 @@
     <a class="ps-logo" href="{% url 'index' %}"
       ><img src="{% static 'images/logo-1.png' %}" alt=""
     /></a>
+    <div class="navigation__right">
+      <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>{{ cart.get_total_quantity }}</i></span><i class="ps-icon--shopping-cart"></i></a>
+        <div class="ps-cart__listing">
+          <div class="ps-cart__content">
+            {% for item in cart %}
+            {% with product=item.product %}
+            <div class="ps-cart-item">
+              <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="{{ product.photo.url }}" alt=""></div>
+              <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">{{ item.name }}</a>
+                <p><span>Quantity:<i>{{ item.quantity }}</i></span><span>Total:<i>RM  {{ item.total_price }}</i></span></p>
+              </div>
+            </div>
+            {% endwith %}
+            {% endfor %}
+          </div>
+          <div class="ps-cart__total">
+            <p>Number of items:<span>{{ cart.get_total_quantity }}</span></p>
+            <p>Item Total:<span>RM {{ cart.get_total_price }}</span></p>
+          </div>
+          <div class="ps-cart__footer"><a class="ps-btn ps-btn--view-bag" href="{% url 'cart:cart_detail' %}">View bag</a></div>
+        </div>
+      </div>
+</div>
   </div>
 </nav>

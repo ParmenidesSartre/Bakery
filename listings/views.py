@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from menu.models import Menu
+from cart.cart import Cart
 from cart.forms import CartAddProductForm
 
 def vault(request):
@@ -17,10 +18,13 @@ def vault(request):
     best_sellers = Menu.objects.filter(best_seller = True)
     new_cakes = Menu.objects.order_by('-added_on')[:3]
 
+    cart = Cart(request)
+
     context = {
         'menus' : paged_listings,
         'best_sellers' : best_sellers,
-        'new_cakes' : new_cakes
+        'new_cakes' : new_cakes,
+        'cart' : cart
     }
 
     return render(request, 'pages/product-listing.html', context)
@@ -28,9 +32,11 @@ def vault(request):
 def cupcake(request, name):
     listing = get_object_or_404(Menu, slug=name)
     cart_product_form = CartAddProductForm()
+    cart = Cart(request)
     context = {
         'listing' : listing,
-        'cart_product_form': cart_product_form
+        'cart_product_form': cart_product_form,
+        'cart' : cart
     }
 
     return render(request, 'pages/product-detail.html', context )
