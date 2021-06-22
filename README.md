@@ -5,6 +5,16 @@ Django-based eCommerce solution for a fictional local bakery.
 ---
 Live version is [here](https://demo-taipingbakery.herokuapp.com/about/)
 
+## Can try mock checkout with
+- Number : 4111 1111 1111 1111
+- CVV : 123
+- Date : 12/28
+
+## How to access admin area ?
+Admin area is [here](http://demo-makmal.herokuapp.com/admin)
+- ID : admin
+- Password : kucing
+
 ## Problem Statements
 - Covid 19 causes problems to small businesses. They required solutions which is small and cheap in order to allow them to modernize their work flow. This small eCommerce solution would be able to help with this.
 
