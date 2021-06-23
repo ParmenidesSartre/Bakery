@@ -4,6 +4,8 @@ Django-based eCommerce solution for a fictional local bakery.
 ![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)
 ---
 Live version is [here](https://demo-taipingbakery.herokuapp.com/about/)
+or
+On Python Anywhere with MySQL database [here](https://parmenidessartre.pythonanywhere.com/)
 
 ## Can try mock checkout with
 - Number : 4111 1111 1111 1111
