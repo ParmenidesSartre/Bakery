@@ -1,7 +1,5 @@
 # Bakery
 Django-based eCommerce solution for a fictional local bakery.
-
-![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)
 ---
 Live version is [here](https://demo-taipingbakery.herokuapp.com/about/)
 or
